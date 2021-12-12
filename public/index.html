@@ -29,6 +29,8 @@
         socket.emit('enviarMensaje', {
             usuario: 'Fabio',
             mensaje: 'Hola Mundo'
+        }, function(resp){
+            console.log('Respuesta server: ', resp);
         });
 
 
